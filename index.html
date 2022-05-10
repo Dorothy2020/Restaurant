@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="'eng">
+
+<head>
+    <meta charset="UTF-8">
+    <metaname="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Complete website</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Foodie<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#expert">Expert</a></li>
+            <li><a href="testimonials">Testimonials</a></li>
+            <li><a href="contact">Contacts</a></li>
+
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Always choose food</h2>
+            <p>cook to eat more for healthier and welthier</p>
+            <a href="#" class="btn">Our menu</a>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+
+        });
+    </script>
+</body>
+
+
+
+
+</html>
